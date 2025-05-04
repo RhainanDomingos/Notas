@@ -20,7 +20,7 @@ struct LoginView: View {
                 Color.backgroundColor.ignoresSafeArea()
                 VStack(spacing: 12) {
                     
-                    Text("LOGIN")
+                    Text("Login")
                         .font(.system(size: 55, weight: .bold))
                         .foregroundStyle(.white)
                     Spacer()
@@ -43,7 +43,7 @@ struct LoginView: View {
                     Button {
                         goNotes.toggle()
                     } label: {
-                        Text("LOGIN")
+                        Text("Login")
                             .frame(width: 180, height: 45)
                             .foregroundStyle(.white)
                             .font(.system(size: 18, weight: .bold))
