@@ -6,17 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AFEE34D92DC6F255009C4F4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFEE34D52DC6F255009C4F4B /* Assets.xcassets */; };
+		AFEE34DA2DC6F255009C4F4B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEE34D62DC6F255009C4F4B /* LoginView.swift */; };
+		AFEE34DB2DC6F255009C4F4B /* NotasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEE34D72DC6F255009C4F4B /* NotasApp.swift */; };
+		AFEE34E02DC6F479009C4F4B /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEE34DF2DC6F479009C4F4B /* Color+Extension.swift */; };
+		AFEE34E32DC6FCC7009C4F4B /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEE34E22DC6FCC7009C4F4B /* RegisterView.swift */; };
+		AFEE34E62DC6FD58009C4F4B /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEE34E52DC6FD58009C4F4B /* NotesView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		AFEE34C72DC6F232009C4F4B /* Notas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFEE34D52DC6F255009C4F4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFEE34D62DC6F255009C4F4B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AFEE34D72DC6F255009C4F4B /* NotasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotasApp.swift; sourceTree = "<group>"; };
+		AFEE34DF2DC6F479009C4F4B /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		AFEE34E22DC6FCC7009C4F4B /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		AFEE34E52DC6FD58009C4F4B /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		AFEE34C92DC6F232009C4F4B /* Notas */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Notas;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AFEE34C42DC6F232009C4F4B /* Frameworks */ = {
@@ -32,7 +39,7 @@
 		AFEE34BE2DC6F232009C4F4B = {
 			isa = PBXGroup;
 			children = (
-				AFEE34C92DC6F232009C4F4B /* Notas */,
+				AFEE34D82DC6F255009C4F4B /* Notas */,
 				AFEE34C82DC6F232009C4F4B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +50,59 @@
 				AFEE34C72DC6F232009C4F4B /* Notas.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AFEE34D82DC6F255009C4F4B /* Notas */ = {
+			isa = PBXGroup;
+			children = (
+				AFEE34E42DC6FD4C009C4F4B /* Notes */,
+				AFEE34DD2DC6F45A009C4F4B /* Utils */,
+				AFEE34E12DC6FCB2009C4F4B /* Register */,
+				AFEE34DC2DC6F3B4009C4F4B /* Login */,
+				AFEE34D72DC6F255009C4F4B /* NotasApp.swift */,
+				AFEE34D52DC6F255009C4F4B /* Assets.xcassets */,
+			);
+			path = Notas;
+			sourceTree = "<group>";
+		};
+		AFEE34DC2DC6F3B4009C4F4B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AFEE34D62DC6F255009C4F4B /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		AFEE34DD2DC6F45A009C4F4B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AFEE34DE2DC6F462009C4F4B /* Extension */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AFEE34DE2DC6F462009C4F4B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AFEE34DF2DC6F479009C4F4B /* Color+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		AFEE34E12DC6FCB2009C4F4B /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				AFEE34E22DC6FCC7009C4F4B /* RegisterView.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		AFEE34E42DC6FD4C009C4F4B /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				AFEE34E52DC6FD58009C4F4B /* NotesView.swift */,
+			);
+			path = Notes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +119,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				AFEE34C92DC6F232009C4F4B /* Notas */,
 			);
 			name = Notas;
 			packageProductDependencies = (
@@ -109,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFEE34D92DC6F255009C4F4B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFEE34DA2DC6F255009C4F4B /* LoginView.swift in Sources */,
+				AFEE34E32DC6FCC7009C4F4B /* RegisterView.swift in Sources */,
+				AFEE34E62DC6FD58009C4F4B /* NotesView.swift in Sources */,
+				AFEE34E02DC6F479009C4F4B /* Color+Extension.swift in Sources */,
+				AFEE34DB2DC6F255009C4F4B /* NotasApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +329,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rhainan.Study.Notas;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rhainan.Study;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -294,7 +357,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rhainan.Study.Notas;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rhainan.Study;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
