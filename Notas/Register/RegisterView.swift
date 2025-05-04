@@ -12,16 +12,18 @@ struct RegisterView: View {
     @State var email: String = ""
     @State var password: String = ""
     @State var confirmPassword: String = ""
+    @State var isPresentedAlert: Bool = false
+    @State var goNotes: Bool = false
 
     var body: some View {
         ZStack {
             Color.backgroundColor.ignoresSafeArea()
-            VStack(spacing: 12) {
+            VStack(spacing: 15) {
                 
                 Text("Register")
                     .font(.system(size: 55, weight: .bold))
                     .foregroundStyle(.white)
-                    .padding(.top, 10)
+                    .padding(.top, 5)
                     .padding(.bottom, 50)
                 
                 Group {
@@ -43,7 +45,11 @@ struct RegisterView: View {
                 Spacer()
                 
                 Button {
-                    print("tapped")
+                    if password == confirmPassword {
+                        goNotes.toggle()
+                    } else {
+                        isPresentedAlert.toggle()
+                    }
                 } label: {
                     Text("Register")
                         .frame(maxWidth: .infinity)
@@ -58,6 +64,14 @@ struct RegisterView: View {
             .padding(.horizontal, 20)
             .padding(.bottom, 50)
         }
+        .alert("Attention", isPresented: $isPresentedAlert) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text("Check password and confirm password and try again")
+        }
+        .navigationDestination(isPresented: $goNotes) {
+            NotesView()
+        }
     }
     
     var isDisabledRegisterButton: Bool {
@@ -66,5 +80,7 @@ struct RegisterView: View {
 }
 
 #Preview {
-    RegisterView()
+    NavigationStack {
+        RegisterView()
+    }
 }

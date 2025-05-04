@@ -18,11 +18,12 @@ struct LoginView: View {
         NavigationStack {
             ZStack {
                 Color.backgroundColor.ignoresSafeArea()
-                VStack(spacing: 12) {
+                VStack(spacing: 15) {
                     
                     Text("Login")
                         .font(.system(size: 55, weight: .bold))
                         .foregroundStyle(.white)
+                        .padding(.top, 20)
                     Spacer()
                     
                     Group {
