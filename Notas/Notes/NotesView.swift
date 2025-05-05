@@ -14,7 +14,7 @@ import SwiftUI
 
 struct NotesView: View {
     
-    @StateObject var viewModel = NoteViewModel()
+    @State var viewModel = NoteViewModel()
     @State var isGoAddNote: Bool = false
     
     var body: some View {

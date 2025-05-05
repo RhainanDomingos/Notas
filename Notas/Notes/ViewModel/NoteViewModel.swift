@@ -7,9 +7,10 @@
 
 import Foundation
 
-class NoteViewModel: ObservableObject {
+@Observable
+class NoteViewModel {
     
-    @Published var notes: [Note] = [] {
+    var notes: [Note] = [] {
         didSet {
             saveNotes()
         }
