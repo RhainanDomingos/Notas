@@ -33,6 +33,8 @@
 		AFC4DC1B2DC8506100486229 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = AFC4DC1A2DC8506100486229 /* FirebaseStorageCombine-Community */; };
 		AFC4DC1D2DC8506100486229 /* FirebaseVertexAI in Frameworks */ = {isa = PBXBuildFile; productRef = AFC4DC1C2DC8506100486229 /* FirebaseVertexAI */; };
 		AFC4DC1F2DC851C100486229 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC4DC1E2DC851C100486229 /* AppDelegate.swift */; };
+		AFC4DC222DC85AA900486229 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC4DC212DC85AA900486229 /* Note.swift */; };
+		AFC4DC252DC85AF800486229 /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC4DC242DC85AF800486229 /* NoteViewModel.swift */; };
 		AFEE34D92DC6F255009C4F4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFEE34D52DC6F255009C4F4B /* Assets.xcassets */; };
 		AFEE34DA2DC6F255009C4F4B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEE34D62DC6F255009C4F4B /* LoginView.swift */; };
 		AFEE34DB2DC6F255009C4F4B /* NotasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEE34D72DC6F255009C4F4B /* NotasApp.swift */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		AFC4DBEB2DC84F6400486229 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AFC4DC1E2DC851C100486229 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFC4DC212DC85AA900486229 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		AFC4DC242DC85AF800486229 /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
 		AFEE34C72DC6F232009C4F4B /* Notas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFEE34D52DC6F255009C4F4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFEE34D62DC6F255009C4F4B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -88,6 +92,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AFC4DC202DC85A9B00486229 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AFC4DC212DC85AA900486229 /* Note.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AFC4DC232DC85AE900486229 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AFC4DC242DC85AF800486229 /* NoteViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		AFEE34BE2DC6F232009C4F4B = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +127,7 @@
 		AFEE34D82DC6F255009C4F4B /* Notas */ = {
 			isa = PBXGroup;
 			children = (
+				AFC4DC202DC85A9B00486229 /* Model */,
 				AFEE34E42DC6FD4C009C4F4B /* Notes */,
 				AFEE34DD2DC6F45A009C4F4B /* Utils */,
 				AFEE34E12DC6FCB2009C4F4B /* Register */,
@@ -154,6 +175,7 @@
 		AFEE34E42DC6FD4C009C4F4B /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				AFC4DC232DC85AE900486229 /* ViewModel */,
 				AFEE34E52DC6FD58009C4F4B /* NotesView.swift */,
 			);
 			path = Notes;
@@ -259,8 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFC4DC252DC85AF800486229 /* NoteViewModel.swift in Sources */,
 				AFC4DC1F2DC851C100486229 /* AppDelegate.swift in Sources */,
 				AFEE34DA2DC6F255009C4F4B /* LoginView.swift in Sources */,
+				AFC4DC222DC85AA900486229 /* Note.swift in Sources */,
 				AFEE34E32DC6FCC7009C4F4B /* RegisterView.swift in Sources */,
 				AFEE34E62DC6FD58009C4F4B /* NotesView.swift in Sources */,
 				AFEE34E02DC6F479009C4F4B /* Color+Extension.swift in Sources */,
