@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF5A94232DC9255B00557547 /* AddNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5A94222DC9255B00557547 /* AddNotesView.swift */; };
+		AF5A94252DC929B700557547 /* NotesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5A94242DC929B700557547 /* NotesDetailView.swift */; };
 		AFC4DBEC2DC84F6400486229 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFC4DBEB2DC84F6400486229 /* GoogleService-Info.plist */; };
 		AFC4DBEF2DC8506100486229 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = AFC4DBEE2DC8506100486229 /* FirebaseAnalytics */; };
 		AFC4DBF12DC8506100486229 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = AFC4DBF02DC8506100486229 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -44,6 +46,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF5A94222DC9255B00557547 /* AddNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotesView.swift; sourceTree = "<group>"; };
+		AF5A94242DC929B700557547 /* NotesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDetailView.swift; sourceTree = "<group>"; };
 		AFC4DBEB2DC84F6400486229 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AFC4DC1E2DC851C100486229 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFC4DC212DC85AA900486229 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 			children = (
 				AFC4DC232DC85AE900486229 /* ViewModel */,
 				AFEE34E52DC6FD58009C4F4B /* NotesView.swift */,
+				AF5A94222DC9255B00557547 /* AddNotesView.swift */,
+				AF5A94242DC929B700557547 /* NotesDetailView.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -284,10 +290,12 @@
 				AFC4DC252DC85AF800486229 /* NoteViewModel.swift in Sources */,
 				AFC4DC1F2DC851C100486229 /* AppDelegate.swift in Sources */,
 				AFEE34DA2DC6F255009C4F4B /* LoginView.swift in Sources */,
+				AF5A94252DC929B700557547 /* NotesDetailView.swift in Sources */,
 				AFC4DC222DC85AA900486229 /* Note.swift in Sources */,
 				AFEE34E32DC6FCC7009C4F4B /* RegisterView.swift in Sources */,
 				AFEE34E62DC6FD58009C4F4B /* NotesView.swift in Sources */,
 				AFEE34E02DC6F479009C4F4B /* Color+Extension.swift in Sources */,
+				AF5A94232DC9255B00557547 /* AddNotesView.swift in Sources */,
 				AFEE34DB2DC6F255009C4F4B /* NotasApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

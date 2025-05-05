@@ -15,13 +15,13 @@ import SwiftUI
 struct NotesView: View {
     
     @StateObject var viewModel = NoteViewModel()
-    @State var isGoAdditionNote: Bool = false
+    @State var isGoAddNote: Bool = false
     
     var body: some View {
         
         List($viewModel.notes, editActions: .all) { $note in
             NavigationLink {
-                Color.red
+                NotesDetailView(note: $note)
             } label: {
                 HStack {
                     Image(systemName: "pencil")
@@ -36,24 +36,23 @@ struct NotesView: View {
                 }
             }
         }
+        .navigationBarBackButtonHidden()
         .navigationTitle("Notas")
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button("Adicionar") {
-                    isGoAdditionNote.toggle()
+                Button("New Note") {
+                    isGoAddNote.toggle()
                 }
             }
         }
-        .navigationDestination(isPresented: $isGoAdditionNote) {
-            Color.blue
+        .sheet(isPresented: $isGoAddNote) {
+            AddNotesView(viewModel: viewModel)
         }
     }
 }
 
 #Preview {
     NavigationStack {
-        
         NotesView()
     }
-    
 }
